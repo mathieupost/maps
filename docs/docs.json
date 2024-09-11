@@ -5688,6 +5688,13 @@
         },
         "default": "none",
         "description": "config is a dictionary of configuration options for the style import.\n\nSee https://github.com/mapbox/mapbox-maps-ios/blob/main/Sources/MapboxMaps/Documentation.docc/Migrate%20to%20v11.md#21-the-mapbox-standard-style"
+      },
+      {
+        "name": "merge",
+        "required": false,
+        "type": "boolean",
+        "default": "none",
+        "description": "Determines whether the style import config should merge with the existing style import config.\n@default false"
       }
     ],
     "fileNameWithExt": "StyleImport.tsx",
