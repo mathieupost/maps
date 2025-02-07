@@ -1,6 +1,6 @@
+import { Camera, MapView, StyleImport } from '@rnmapbox/maps';
 import React, { useState } from 'react';
 import { Button } from 'react-native';
-import { MapView, StyleImport, Camera } from '@rnmapbox/maps';
 
 const StyleImportConfig = () => {
   const [lightPreset, setLightPreset] = useState('night');
@@ -30,6 +30,7 @@ const StyleImportConfig = () => {
           config={{
             lightPreset: lightPreset,
           }}
+          merge
         />
       </MapView>
     </>
