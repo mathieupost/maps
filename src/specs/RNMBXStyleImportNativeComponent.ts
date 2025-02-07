@@ -7,6 +7,7 @@ export interface NativeProps extends ViewProps {
   id: string;
   existing: boolean;
   config: UnsafeMixed<{ [key: string]: string }>;
+  merge?: boolean;
 }
 
 export default codegenNativeComponent<NativeProps>(
